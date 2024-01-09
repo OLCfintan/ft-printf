@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	ft_putstr(char *tab, int temp)
+void	ft_putstr(char *tab, int *temp)
 {
 	int	i;
 
@@ -20,5 +20,5 @@ void	ft_putstr(char *tab, int temp)
 	if (!tab)
 		ft_putstr("(null)", temp);
 	while (tab && tab[i])
-		ft_putchar(tab[i++], &temp);
+		ft_putchar(tab[i++], temp);
 }
