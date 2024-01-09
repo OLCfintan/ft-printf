@@ -17,10 +17,10 @@ void	ft_check(va_list args, char c, int *temp)
 	if (c == 'c')
 		ft_putchar(va_arg(args, int), temp);
 	else if (c == 's')
-		ft_putstr(va_arg(args, char *), *temp);
+		ft_putstr(va_arg(args, char *), temp);
 	else if (c == 'p')
 	{
-		ft_putstr("0x", *temp);
+		ft_putstr("0x", temp);
 		ft_puthexa(va_arg(args, unsigned long), temp, 87);
 	}
 	else if (c == 'd' || c == 'i')
